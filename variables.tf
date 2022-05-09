@@ -9,4 +9,5 @@ variable "vcs_repo" {}
 variable "vcs_branch" { default = "main" }
 variable "auto_apply" { default = false }
 variable "notification_triggers" { default = ["run:needs_attention"] }
-variable "slack_token" {}
+variable "slack_token" { sensitive = true }
+
